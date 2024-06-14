@@ -32,5 +32,6 @@ export default defineConfig({
       // 自动生成侧边栏
       AutoSidebar()
     ]
-  }
+  },
+  base: '/Lean-Share/'
 })
