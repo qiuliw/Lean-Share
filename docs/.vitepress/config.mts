@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '计组', link: '/CCP/CSAPP/1、整数运算.md'}
     ],
 
     sidebar: [
@@ -23,6 +24,13 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    ]
+  },
+  // 插件
+  vite:{
+    plugins:[
+      // 自动生成侧边栏
+      AutoSidebar()
     ]
   }
 })
