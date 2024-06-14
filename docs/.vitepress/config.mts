@@ -9,7 +9,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: '计组', link: '/CCP/CSAPP/1、整数运算.md'}
+      { text: '计组', link: '/计算机组成原理/深入理解计算机系统/1、整数运算.md'}
     ],
 
     sidebar: [
